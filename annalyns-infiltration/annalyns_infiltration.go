@@ -2,10 +2,7 @@ package annalyn
 
 // CanFastAttack can be executed only when the knight is sleeping.
 func CanFastAttack(knightIsAwake bool) bool {
-	if knightIsAwake {
-		return false
-	}
-	return true
+	return !knightIsAwake
 }
 
 // CanSpy can be executed if at least one of the characters is awake.
